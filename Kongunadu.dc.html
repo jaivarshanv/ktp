@@ -299,7 +299,6 @@ class Component extends DCLogic {
       down = true; moved = 0;
       startX = e.clientX; startScroll = rail.scrollLeft;
       rail.style.cursor = "grabbing";
-      rail.setPointerCapture && rail.setPointerCapture(e.pointerId);
     };
     const onMove = (e) => {
       if (!down) return;
@@ -310,15 +309,22 @@ class Component extends DCLogic {
     };
     const onUp = () => { down = false; rail.style.cursor = "grab"; };
     rail.addEventListener("pointerdown", onDown);
-    rail.addEventListener("pointermove", onMove);
-    rail.addEventListener("pointerup", onUp);
-    rail.addEventListener("pointercancel", onUp);
+    window.addEventListener("pointermove", onMove);
+    window.addEventListener("pointerup", onUp);
+    window.addEventListener("pointercancel", onUp);
+    this._railMove = onMove;
+    this._railUp = onUp;
     rail.addEventListener("click", (e) => { if (moved > 6) { e.preventDefault(); e.stopPropagation(); } }, true);
     this._rail = rail;
   }
 
   componentWillUnmount() {
     if (this._io) this._io.disconnect();
+    if (this._railMove) {
+      window.removeEventListener("pointermove", this._railMove);
+      window.removeEventListener("pointerup", this._railUp);
+      window.removeEventListener("pointercancel", this._railUp);
+    }
     if (this._onHeroScroll) {
       window.removeEventListener("scroll", this._onHeroScroll);
       document.removeEventListener("scroll", this._onHeroScroll, true);
