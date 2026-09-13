@@ -26,14 +26,13 @@ a:hover{color:#1F3FC4}
 <main style="width:100%;overflow-x:clip">
 
   <header style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding:20px clamp(18px,4vw,56px)">
-    <a href="#top" style="font-size:12px;letter-spacing:0.18em;text-transform:uppercase;font-weight:600;line-height:1.2">Kongunadu Textile Process</a>
+    <a href="#top" style="font-size:12px;letter-spacing:0.18em;text-transform:uppercase;font-weight:600;line-height:1.2">Kongunadu<span style="color:#66645E;padding:0 8px">/</span>Textile Process</a>
     <a href="#enquire" style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;font-weight:600;border-bottom:1px solid currentColor;padding-bottom:3px">Enquire</a>
   </header>
 
-  <section id="top" data-hero-track="1" style="position:relative;width:100%;height:200svh">
-    <div data-hero-stage="1" style="position:sticky;top:0;height:calc(100svh - 58px);min-height:400px;width:100%;overflow:hidden;background:#1C1E21">
-      <img data-hero-a="1" src="./assets/hero-htp-vessels.webp" alt="Stainless steel HT–HP soft flow dyeing vessels with digital control cabinet inside the processing hall" fetchpriority="high" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:58% 44%" />
-      <img data-hero-b="1" src="./assets/hero-drying-landscape.webp" alt="Rows of pink and pale yellow dyed fabric hanging to dry in a timber-framed shed, receding in one-point perspective" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 54%;opacity:0" />
+  <section id="top" style="position:relative;width:100%">
+    <div style="position:relative;height:calc(100svh - 58px);min-height:400px;width:100%;overflow:hidden;background:#1C1E21">
+      <img src="./assets/hero-htp-vessels.webp" alt="Stainless steel HT–HP soft flow dyeing vessels with digital control cabinet inside the processing hall" fetchpriority="high" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:58% 44%" />
       <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,11,12,0.9) 0%,rgba(10,11,12,0.66) 24%,rgba(10,11,12,0.26) 52%,rgba(10,11,12,0.08) 76%)"></div>
 
       <div style="position:absolute;inset:auto 0 0 0;pointer-events:none;padding:0 clamp(18px,4vw,56px) clamp(52px,9vh,104px);z-index:2">
@@ -62,51 +61,24 @@ a:hover{color:#1F3FC4}
       <span>Premium, sustainably sourced dyes</span>
     </div>
     <div style="display:flex;align-items:flex-end">
-      <a href="#enquire" style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;font-weight:600;border-bottom:1px solid currentColor;padding-bottom:4px" style-hover="color:#1F3FC4">Enquire</a>
+      <a href="#enquire" style="display:inline-flex;align-items:center;gap:10px;background:#16171A;color:#E8E7E3;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;font-weight:600;padding:15px 24px;clip-path:polygon(0 0, calc(100% - 13px) 0, 100% 13px, 100% 100%, 13px 100%, 0 calc(100% - 13px));transition:background .35s ease,color .35s ease" style-hover="background:#1F3FC4;color:#FFFFFF">Enquire<span aria-hidden="true">→</span></a>
     </div>
   </div>
 
-  <section id="precision" style="background:#131416;color:#EDEBE7;padding:clamp(64px,13vh,150px) clamp(18px,4vw,56px)">
-    <div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#97958F;padding-bottom:clamp(28px,5vh,56px)">
-      <span>02 / Precision</span>
-      <span>Specified · Measured · Repeated</span>
-    </div>
-
-    <div data-reveal="1" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,64px);align-items:end;background:#0B6A4F;margin:0 calc(-1 * clamp(18px,4vw,56px)) clamp(40px,7vh,86px);padding:clamp(30px,5.5vh,62px) clamp(18px,4vw,56px)">
-      <h2 style="margin:0;font-size:clamp(38px,6.4vw,92px);line-height:0.92;letter-spacing:-0.04em;font-weight:600;text-wrap:balance">Different colour.<br /><span style="color:#E8D98A">Consistent result.</span></h2>
-      <p style="margin:0;font-size:clamp(15px,1.25vw,18px);line-height:1.5;color:rgba(237,235,231,0.92);max-width:44ch;text-wrap:pretty">Colour is matched in the laboratory before it reaches fabric, then held across batches by automated dyeing systems. Traditional textile expertise, modern energy-efficient practice.</p>
-    </div>
-
-    <ul style="list-style:none;margin:0;padding:0;border-top:1px solid rgba(237,235,231,0.18)">
-      <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="4">
-        <li data-reveal="1" style="border-bottom:1px solid rgba(237,235,231,0.18)">
-          <div style="display:grid;grid-template-columns:64px minmax(0,1.15fr) minmax(0,1fr);gap:clamp(14px,3vw,44px);align-items:start;padding:clamp(20px,3.4vh,34px) 0">
-            <span style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;padding-top:4px">
-              <span aria-hidden="true" style="width:34px;height:34px;background:{{ p.c }};border-radius:{{ p.r }};transition:transform .5s cubic-bezier(.2,.7,.2,1),border-radius .5s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.18)"></span>
-              <span style="font-size:11px;letter-spacing:0.16em;color:#97958F">{{ p.n }}</span>
-            </span>
-            <h3 style="margin:0;font-size:clamp(21px,3.1vw,44px);line-height:1.02;letter-spacing:-0.03em;font-weight:500">{{ p.title }}</h3>
-            <p style="margin:0;font-size:14px;line-height:1.5;opacity:0.68;max-width:40ch;text-wrap:pretty">{{ p.body }}</p>
-          </div>
-        </li>
-      </sc-for>
-    </ul>
-  </section>
-
   <section id="colour" style="padding:clamp(64px,13vh,150px) 0">
     <div style="padding:0 clamp(18px,4vw,56px);display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#66645E;padding-bottom:clamp(28px,5vh,56px)">
-      <span>03 / Colour</span>
+      <span>02 / Colour</span>
       <span>Pantone · Laboratory matching</span>
     </div>
 
-    <div data-reveal="1" style="padding:0 clamp(18px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,64px);align-items:end;padding-bottom:clamp(32px,5vh,64px)">
-      <h2 style="margin:0;font-size:clamp(38px,6.4vw,92px);line-height:0.92;letter-spacing:-0.04em;font-weight:600;text-wrap:balance">Colour is the expression.</h2>
-      <p style="margin:0;font-size:clamp(15px,1.25vw,18px);line-height:1.5;opacity:0.7;max-width:44ch;text-wrap:pretty">Colour is specified in Pantone and matched physically — swatch against fabric, under laboratory conditions, before a batch runs.</p>
+    <div style="padding:0 clamp(18px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,64px);align-items:end;padding-bottom:clamp(32px,5vh,64px)">
+      <h2 data-reveal="mask" style="margin:0;font-size:clamp(38px,6.4vw,92px);line-height:0.92;letter-spacing:-0.04em;font-weight:600;text-wrap:balance">Colour is the expression.</h2>
+      <p data-reveal="1" style="margin:0;font-size:clamp(15px,1.25vw,18px);line-height:1.5;opacity:0.7;max-width:44ch;text-wrap:pretty">Colour is specified in Pantone and matched physically — swatch against fabric, under laboratory conditions, before a batch runs.</p>
     </div>
 
-    <div data-rail="1" tabindex="0" role="group" aria-label="Textile colour swatches, drag or scroll horizontally" style="display:flex;align-items:flex-start;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;scrollbar-width:none;cursor:grab;padding:14px clamp(18px,4vw,56px) 28px;gap:0">
+    <div data-rail="1" tabindex="0" role="group" aria-label="Textile colour swatches, drag or scroll horizontally" style="display:flex;align-items:flex-start;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;scrollbar-width:none;cursor:grab;padding:34px clamp(18px,4vw,56px) 30px;gap:0">
       <sc-for list="{{ swatches }}" as="s" hint-placeholder-count="6">
-        <button type="button" onClick="{{ s.pick }}" aria-pressed="{{ s.on }}" style="appearance:none;border:0;padding:0;cursor:pointer;flex:0 0 auto;scroll-snap-align:center;width:clamp(156px,21vw,246px);height:clamp(212px,29vw,340px);margin-right:{{ s.gap }}px;background:{{ s.hex }};transform:rotate({{ s.tilt }}deg);box-shadow:{{ s.ring }};z-index:{{ s.z }};position:relative;overflow:hidden;transition:transform .45s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;text-align:left" style-hover="transform:rotate(0deg) translateY(-12px);z-index:30">
+        <button type="button" onClick="{{ s.pick }}" aria-pressed="{{ s.on }}" style="appearance:none;border:0;padding:0;cursor:pointer;flex:0 0 auto;scroll-snap-align:center;width:clamp(156px,21vw,246px);height:clamp(212px,29vw,340px);margin-right:{{ s.gap }}px;background:{{ s.hex }};transform:{{ s.tf }};box-shadow:{{ s.ring }};z-index:{{ s.z }};position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s ease;display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;text-align:left" style-hover="transform:rotate(0deg) translateY(-22px);z-index:30">
           <img src="{{ s.img }}" alt="{{ s.alt }}" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
           <span style="position:relative;z-index:1;display:flex;flex-direction:column;gap:3px;background:rgba(14,15,17,0.8);padding:9px 11px;color:#EDEBE7">
             <span style="font-size:11px;letter-spacing:0.13em;text-transform:uppercase;line-height:1.2">{{ s.name }}</span>
@@ -127,9 +99,36 @@ a:hover{color:#1F3FC4}
         <div style="position:relative;overflow:hidden;height:clamp(180px,26vw,300px);background:{{ cur.hex }}">
           <img src="{{ cur.img }}" alt="{{ cur.alt }}" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
         </div>
-        <p style="margin:14px 0 0;font-size:13px;line-height:1.5;opacity:0.62;max-width:44ch;text-wrap:pretty">Colour families observed in finished fabric. Pantone references are specified per order — no codes are shown here until confirmed.</p>
+        <p style="margin:14px 0 0;font-size:13px;line-height:1.5;opacity:0.62;max-width:44ch;text-wrap:pretty">Colours achieved in dyeing at the facility. Pantone references are specified per order — no codes are shown here until confirmed.</p>
       </div>
     </div>
+  </section>
+
+  <section id="precision" style="background:#131416;color:#EDEBE7;padding:clamp(64px,13vh,150px) clamp(18px,4vw,56px)">
+    <div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#97958F;padding-bottom:clamp(28px,5vh,56px)">
+      <span>03 / Precision</span>
+      <span>Specified · Measured · Repeated</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,64px);align-items:end;background:#0B6A4F;margin:0 calc(-1 * clamp(18px,4vw,56px)) clamp(40px,7vh,86px);padding:clamp(30px,5.5vh,62px) clamp(18px,4vw,56px)">
+      <h2 data-reveal="mask" style="margin:0;font-size:clamp(38px,6.4vw,92px);line-height:0.92;letter-spacing:-0.04em;font-weight:600;text-wrap:balance">Different colour.<br /><span style="color:#E8D98A">Consistent result.</span></h2>
+      <p data-words="1" style="margin:0;font-size:clamp(15px,1.25vw,18px);line-height:1.5;color:rgba(237,235,231,0.92);max-width:44ch;text-wrap:pretty">Colour is matched in the laboratory before it reaches fabric, then held across batches by automated dyeing systems. Traditional textile expertise, modern energy-efficient practice.</p>
+    </div>
+
+    <ul style="list-style:none;margin:0;padding:0;border-top:1px solid rgba(237,235,231,0.18)">
+      <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="4">
+        <li data-reveal="1" style="border-bottom:1px solid rgba(237,235,231,0.18)">
+          <div style="display:grid;grid-template-columns:64px minmax(0,1.15fr) minmax(0,1fr);gap:clamp(14px,3vw,44px);align-items:start;padding:clamp(20px,3.4vh,34px) 0">
+            <span style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;padding-top:4px">
+              <span aria-hidden="true" style="width:34px;height:34px;background:{{ p.c }};border-radius:{{ p.r }};transition:transform .5s cubic-bezier(.2,.7,.2,1),border-radius .5s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.18)"></span>
+              <span style="font-size:11px;letter-spacing:0.16em;color:#97958F">{{ p.n }}</span>
+            </span>
+            <h3 style="margin:0;font-size:clamp(21px,3.1vw,44px);line-height:1.02;letter-spacing:-0.03em;font-weight:500">{{ p.title }}</h3>
+            <p style="margin:0;font-size:14px;line-height:1.5;opacity:0.68;max-width:40ch;text-wrap:pretty">{{ p.body }}</p>
+          </div>
+        </li>
+      </sc-for>
+    </ul>
   </section>
 
   <section id="htp" style="background:#131416;color:#EDEBE7;padding:clamp(64px,13vh,150px) 0">
@@ -138,7 +137,7 @@ a:hover{color:#1F3FC4}
       <span>High temperature · High pressure</span>
     </div>
 
-    <h2 data-reveal="1" style="margin:clamp(24px,4vh,48px) 0 0;background:#1F3FC4;padding:clamp(14px,2.4vh,30px) clamp(18px,4vw,56px) clamp(20px,3.4vh,40px);font-size:clamp(64px,17vw,300px);line-height:0.8;letter-spacing:-0.05em;font-weight:600">HT–HP</h2>
+    <h2 data-reveal="mask" style="margin:clamp(24px,4vh,48px) 0 0;background:#1F3FC4;padding:clamp(14px,2.4vh,30px) clamp(18px,4vw,56px) clamp(20px,3.4vh,40px);font-size:clamp(64px,17vw,300px);line-height:0.8;letter-spacing:-0.05em;font-weight:600">HT–HP</h2>
 
     <div style="height:clamp(240px,46vh,520px);margin:clamp(28px,5vh,60px) 0;background:repeating-linear-gradient(90deg,#1E2023 0 7px,#191B1E 7px 14px);display:flex;align-items:flex-end;padding:clamp(18px,4vw,56px)">
       <sc-if value="{{ notes }}" hint-placeholder-val="{{ true }}">
@@ -169,9 +168,9 @@ a:hover{color:#1F3FC4}
       <span>Responsible processing</span>
     </div>
 
-    <div data-reveal="1" style="padding:0 clamp(18px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,64px);align-items:end;padding-bottom:clamp(32px,5vh,64px)">
-      <h2 style="margin:0;font-size:clamp(38px,6.4vw,92px);line-height:0.92;letter-spacing:-0.04em;font-weight:600;text-wrap:balance">Water returns<br />to the process.</h2>
-      <p style="margin:0;font-size:clamp(15px,1.25vw,18px);line-height:1.5;opacity:0.7;max-width:44ch;text-wrap:pretty">Sophisticated water management, reverse osmosis for recycling water, Zero Liquid Discharge and efficient steam generation — treated as manufacturing engineering, not decoration.</p>
+    <div style="padding:0 clamp(18px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,64px);align-items:end;padding-bottom:clamp(32px,5vh,64px)">
+      <h2 data-reveal="mask" style="margin:0;font-size:clamp(38px,6.4vw,92px);line-height:0.92;letter-spacing:-0.04em;font-weight:600;text-wrap:balance">Water returns<br />to the process.</h2>
+      <p data-reveal="1" style="margin:0;font-size:clamp(15px,1.25vw,18px);line-height:1.5;opacity:0.7;max-width:44ch;text-wrap:pretty">Sophisticated water management, reverse osmosis for recycling water, Zero Liquid Discharge and efficient steam generation — treated as manufacturing engineering, not decoration.</p>
     </div>
 
     <div style="position:relative;height:clamp(300px,72svh,700px);width:100%;background:repeating-linear-gradient(160deg,#2A3136 0 11px,#242A2F 11px 22px);display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:clamp(18px,4vw,56px)">
@@ -192,18 +191,18 @@ a:hover{color:#1F3FC4}
       <span>Enquiries</span>
       <span>Domestic &amp; international garment manufacturers</span>
     </div>
-    <h2 style="margin:0;font-size:clamp(38px,7vw,120px);line-height:0.88;letter-spacing:-0.045em;font-weight:600;max-width:22ch;text-wrap:balance">Send us a colour. We will match it.</h2>
+    <h2 data-reveal="mask" style="margin:0;font-size:clamp(38px,7vw,120px);line-height:0.88;letter-spacing:-0.045em;font-weight:600;max-width:22ch;text-wrap:balance">Send us a colour. We will match it.</h2>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:clamp(20px,3vw,48px);padding-top:clamp(36px,6vh,72px);border-top:1px solid rgba(22,23,26,0.16);margin-top:clamp(36px,6vh,72px)">
       <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
         <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#66645E">Contact</span>
         <span style="font-size:clamp(18px,1.7vw,24px);letter-spacing:-0.02em">Karthikeyan VS</span>
         <a href="tel:+919003777527" style="font-size:clamp(18px,1.7vw,24px);letter-spacing:-0.01em;border-bottom:1px solid rgba(22,23,26,0.3);padding-bottom:3px" style-hover="border-color:#1F3FC4">9003777527</a>
-        <a href="https://wa.me/919003777527" target="_blank" rel="noopener" style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;font-weight:600;border-bottom:1px solid currentColor;padding-bottom:3px;margin-top:4px" style-hover="color:#1F3FC4">WhatsApp</a>
+        <a href="https://wa.me/919003777527" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#16171A;color:#E8E7E3;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;font-weight:600;padding:14px 22px;margin-top:6px;clip-path:polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));transition:background .35s ease,color .35s ease" style-hover="background:#1F3FC4;color:#FFFFFF">WhatsApp<span aria-hidden="true">→</span></a>
       </div>
-      <div style="display:flex;flex-direction:column;gap:10px;font-size:11px;letter-spacing:0.16em;text-transform:uppercase">
-        <span style="color:#66645E">Established</span>
-        <span>1990</span>
+      <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+        <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#66645E">Established</span>
+        <span data-odometer="1990" style="font-size:clamp(46px,7vw,104px);line-height:0.9;letter-spacing:-0.045em;font-weight:600">1990</span>
       </div>
       <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;line-height:1.7;color:#66645E;letter-spacing:0.05em">[ pending ]<br />email · address · enquiry form</div>
     </div>
@@ -235,59 +234,133 @@ class Component extends DCLogic {
     { n: "04", title: "Batch-to-batch consistency", body: "The same colour, repeated across runs.", c: "#E7B4B0", r: "2px" }
   ];
 
+  get reduced() {
+    return !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  }
+
   componentDidMount() {
     this.initRail();
-    this.initHero();
-    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (this.reduced) return;
+    this.initReveals();
+    this.initWords();
+    this.initOdometer();
+  }
+
+  componentDidUpdate() {
+    if (this.reduced) return;
+    this.initWords();
+    this.initOdometer();
+  }
+
+  /* ---------- reveals: plain rise + clip-path mask wipe ---------- */
+
+  initReveals() {
     const els = Array.prototype.slice.call(document.querySelectorAll("[data-reveal]"));
     if (!els.length || !window.IntersectionObserver) return;
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         if (!e.isIntersecting) return;
-        e.target.style.opacity = "1";
-        e.target.style.transform = "none";
-        io.unobserve(e.target);
+        const el = e.target;
+        if (el.getAttribute("data-reveal") === "mask") {
+          el.style.clipPath = "inset(-4% -2% -14% -2%)";
+          el.style.transform = "none";
+        } else {
+          el.style.opacity = "1";
+          el.style.transform = "none";
+        }
+        io.unobserve(el);
       });
     }, { rootMargin: "0px 0px -12% 0px" });
     els.forEach((el) => {
-      if (el.getBoundingClientRect().top < window.innerHeight * 0.88) return;
-      el.style.opacity = "0";
-      el.style.transform = "translateY(20px)";
-      el.style.transition = "opacity .85s cubic-bezier(.2,.7,.2,1), transform .85s cubic-bezier(.2,.7,.2,1)";
+      const near = el.getBoundingClientRect().top < window.innerHeight * 0.88;
+      if (el.getAttribute("data-reveal") === "mask") {
+        if (near) return;
+        el.style.clipPath = "inset(-4% -2% 100% -2%)";
+        el.style.transform = "translateY(14px)";
+        el.style.transition = "clip-path 1.05s cubic-bezier(.16,.86,.2,1), transform 1.05s cubic-bezier(.16,.86,.2,1)";
+      } else {
+        if (near) return;
+        el.style.opacity = "0";
+        el.style.transform = "translateY(20px)";
+        el.style.transition = "opacity .85s cubic-bezier(.2,.7,.2,1), transform .85s cubic-bezier(.2,.7,.2,1)";
+      }
       io.observe(el);
     });
     this._io = io;
   }
 
-  initHero() {
-    const stage = document.querySelector("[data-hero-stage]");
-    if (!stage || stage._wired) return;
-    stage._wired = true;
-    const track = document.querySelector("[data-hero-track]");
-    const a = stage.querySelector("[data-hero-a]");
-    const b = stage.querySelector("[data-hero-b]");
-    if (!track || !a || !b) return;
-    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let raf = 0;
-    const apply = () => {
-      raf = 0;
-      const r = track.getBoundingClientRect();
-      const span = Math.max(1, r.height - stage.offsetHeight);
-      let p = -r.top / span;
-      p = p < 0 ? 0 : p > 1 ? 1 : p;
-      let t = (p - 0.1) / 0.62;
-      t = t < 0 ? 0 : t > 1 ? 1 : t;
-      t = t * t * (3 - 2 * t);
-      b.style.opacity = String(t);
-      a.style.opacity = String(1 - t);
-    };
-    const onScroll = () => { if (!raf) raf = requestAnimationFrame(apply); };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    document.addEventListener("scroll", onScroll, true);
-    window.addEventListener("resize", onScroll);
-    this._onHeroScroll = onScroll;
-    apply();
+  /* ---------- word-by-word resolve ---------- */
+
+  initWords() {
+    const el = document.querySelector("[data-words]");
+    if (!el || el._wordsDone) return;
+    if (!window.IntersectionObserver) return;
+    const text = el.textContent.trim();
+    if (!text) return;
+    el._wordsDone = true;
+    el.textContent = "";
+    const words = text.split(/\s+/);
+    words.forEach((w, i) => {
+      const s = document.createElement("span");
+      s.textContent = w;
+      s.style.opacity = "0.16";
+      s.style.transition = "opacity .7s ease " + (i * 0.028).toFixed(3) + "s";
+      el.appendChild(s);
+      if (i < words.length - 1) el.appendChild(document.createTextNode(" "));
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        Array.prototype.forEach.call(e.target.children, (c) => { c.style.opacity = "1"; });
+        io.unobserve(e.target);
+      });
+    }, { rootMargin: "0px 0px -18% 0px" });
+    io.observe(el);
+    this._wordsIo = io;
   }
+
+  /* ---------- 1990 digit roll ---------- */
+
+  initOdometer() {
+    const el = document.querySelector("[data-odometer]");
+    if (!el || el._odoDone) return;
+    if (!window.IntersectionObserver) return;
+    const digits = (el.getAttribute("data-odometer") || el.textContent || "").replace(/\D/g, "");
+    if (!digits) return;
+    el._odoDone = true;
+    el.textContent = "";
+    el.setAttribute("aria-label", digits);
+    el.style.display = "inline-flex";
+    const cols = [];
+    for (let i = 0; i < digits.length; i++) {
+      const col = document.createElement("span");
+      col.setAttribute("aria-hidden", "true");
+      col.style.cssText = "display:block;overflow:hidden;height:0.9em;line-height:0.9";
+      const strip = document.createElement("span");
+      strip.style.cssText = "display:block;transition:transform 1.15s cubic-bezier(.16,.86,.2,1) " + (i * 0.09).toFixed(2) + "s";
+      for (let d = 0; d <= 9; d++) {
+        const cell = document.createElement("span");
+        cell.textContent = String(d);
+        cell.style.cssText = "display:block;height:0.9em;line-height:0.9";
+        strip.appendChild(cell);
+      }
+      strip.style.transform = "translateY(0)";
+      col.appendChild(strip);
+      el.appendChild(col);
+      cols.push({ strip: strip, target: parseInt(digits[i], 10) });
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        cols.forEach((c) => { c.strip.style.transform = "translateY(" + (-c.target * 0.9) + "em)"; });
+        io.unobserve(e.target);
+      });
+    }, { rootMargin: "0px 0px -20% 0px" });
+    io.observe(el);
+    this._odoIo = io;
+  }
+
+  /* ---------- swatch rail ---------- */
 
   initRail() {
     const rail = document.querySelector("[data-rail]");
@@ -320,35 +393,37 @@ class Component extends DCLogic {
 
   componentWillUnmount() {
     if (this._io) this._io.disconnect();
+    if (this._wordsIo) this._wordsIo.disconnect();
+    if (this._odoIo) this._odoIo.disconnect();
     if (this._railMove) {
       window.removeEventListener("pointermove", this._railMove);
       window.removeEventListener("pointerup", this._railUp);
       window.removeEventListener("pointercancel", this._railUp);
-    }
-    if (this._onHeroScroll) {
-      window.removeEventListener("scroll", this._onHeroScroll);
-      document.removeEventListener("scroll", this._onHeroScroll, true);
-      window.removeEventListener("resize", this._onHeroScroll);
     }
   }
 
   renderVals() {
     const tilt = this.props.swatchTilt ?? 3;
     const overlap = this.props.overlapSwatches ?? true;
-    const n = this.swatches.length;
-    const swatches = this.swatches.map((s, i) => ({
-      name: s.name,
-      family: s.family,
-      hex: s.hex,
-      img: s.img,
-      alt: s.name + " dyed knit fabric swatch",
-      on: i === this.state.sel,
-      gap: overlap ? -14 : 10,
-      z: i + 1,
-      tilt: overlap ? (this.baseTilt[i] * tilt) / 3 : 0,
-      ring: i === this.state.sel ? "inset 0 0 0 3px #16171A, 0 14px 34px rgba(16,17,20,0.22)" : "0 1px 0 rgba(22,23,26,0.14)",
-      pick: () => this.setState({ sel: i })
-    }));
+    const swatches = this.swatches.map((s, i) => {
+      const on = i === this.state.sel;
+      const rot = overlap ? (this.baseTilt[i] * tilt) / 3 : 0;
+      return {
+        name: s.name,
+        family: s.family,
+        hex: s.hex,
+        img: s.img,
+        alt: s.name + " dyed knit fabric swatch",
+        on: on,
+        gap: overlap ? -18 : 10,
+        z: on ? 25 : i + 1,
+        tf: on ? "rotate(0deg) translateY(-26px) scale(1.035)" : "rotate(" + rot + "deg) translateY(0) scale(1)",
+        ring: on
+          ? "inset 0 0 0 3px #16171A, 0 26px 52px rgba(16,17,20,0.34)"
+          : "0 4px 14px rgba(16,17,20,0.16)",
+        pick: () => this.setState({ sel: i })
+      };
+    });
     return {
       swatches,
       cur: Object.assign({ alt: this.swatches[this.state.sel].name + " dyed knit fabric swatch" }, this.swatches[this.state.sel]),
